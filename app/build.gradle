@@ -14,9 +14,6 @@ android {
     }
 
     sourceSets {
-        main {
-            python.srcDir "app/src/main/python"
-        }
     }
 
     defaultConfig {
@@ -27,18 +24,6 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-
-        python {
-            /*buildPython "/usr/local/bin/python3"
-            buildPython "python3"*/
-            pip{
-                install "-r", "requirements.txt"
-            }
-        }
-
-        ndk {
-            abiFilters "armeabi-v7a", "x86"
-        }
     }
 
     buildTypes {
