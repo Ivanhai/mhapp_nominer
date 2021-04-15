@@ -18,7 +18,7 @@
 
 * Сколинуйте репозиторий с помощью git:
 ```bash
-git clone https://github.com/Ivanhai/mhapp.git
+git clone https://github.com/Ivanhai/mhapp_nominer.git
 ```
 
 ### `2.` 💻 Компиляция
