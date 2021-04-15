@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ivanhai.mhcoin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Mhcoin">
+        <activity
+            android:name=".ServerNetwork"
+            android:label="@string/server_network"/>
+        <activity
+            android:name=".usuallyMiner"
+            android:label="@string/usually_miner"/>
+        <activity
+            android:name=".Multithread"
+            android:label="@string/multithread_miner"/>
+        <activity
+            android:name=".MinerActivity"
+            android:label="@string/miner_activity"/>
+        <activity
+            android:name=".TopUsers"
+            android:label="@string/top_users"/>
+        <activity
+            android:name=".ChangePassword"
+            android:label="@string/change_password"/>
+        <activity
+            android:name=".UserRegister"
+            android:label = "@string/user_register"/>
+        <activity
+            android:name=".TransfersActivity"
+            android:label="@string/transfer_name" />
+        <activity
+            android:name=".InfoActivity"
+            android:label="@string/info_user" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

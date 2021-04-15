@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Mhcoin</string>
+    <string name="info_user">О пользователе</string>
+    <string name="transfer_name">Транзакции</string>
+    <string name="user_register">Регистрация</string>
+    <string name="change_password">Изменить пароль</string>
+    <string name="top_users">Топ пользователей</string>
+    <string name="miner_activity">Майнеры</string>
+    <string name="multithread_miner">Мультипоточный майнер</string>
+    <string name="usually_miner">Обычный майнер</string>
+    <string name="server_network">Сеть / Сервер</string>
+</resources>
