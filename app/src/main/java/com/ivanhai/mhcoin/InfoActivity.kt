@@ -72,13 +72,6 @@ class InfoActivity : AppCompatActivity() {
             )
             startActivity(intent)
         }
-        findViewById<Button>(R.id.mining).setOnClickListener {
-            val intent = Intent(
-                this@InfoActivity,
-                MinerActivity::class.java
-            )
-            startActivity(intent)
-        }
         findViewById<Button>(R.id.serverNetwork).setOnClickListener {
             val intent = Intent(
                 this@InfoActivity,
