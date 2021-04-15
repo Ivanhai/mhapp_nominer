@@ -1,0 +1,44 @@
+name: Билд mhapp
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+  release:
+    types: released
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Сетапим джаву
+      uses: actions/setup-java@v1.4.3
+      with:
+        java-version: 15
+
+    - name: Даю права на запуск градлу
+      run: chmod +x gradlew
+      
+    - name : Создаю local.properties
+      run: |
+       echo sdk.dir="$ANDROID_SDK_ROOT" > ./local.properties
+       echo chaquopy.license="ADCOZh9lSwXa7BArj2j1gni5JznpJJWNZ6nbNhR9FTLx" > ./local.properties
+       echo chaquopy.applicationId="com.ivanhai.mhcoin" > ./local.properties
+
+    # Билдим
+    - name: Билд с градлом
+      run: "./gradlew assembleDebug"
+
+    # Кидаю артифакты в GitHub
+    - uses: actions/upload-artifact@v2
+      name: "Загружаю mhapp"
+      with:
+        name: android-mhapp
+        path: app/build/outputs/apk/debug/app-debug.apk
+# Пулл (pull request) - сравнение ветки в личном репозитории с кодом основного. Так мы увидим изменения, которые вы сделали
