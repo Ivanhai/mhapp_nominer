@@ -32,13 +32,7 @@ class MainActivity : AppCompatActivity() {
             findViewById<EditText>(R.id.Password).setText(mSettings.getString("password", ""))
         }
 
-        findViewById<TextView>(R.id.miningWithNoLogin).setOnClickListener {
-            val intent = Intent(
-                this@MainActivity,
-                MinerActivity::class.java
-            )
-            startActivity(intent)
-        }
+        
 
         findViewById<TextView>(R.id.register).setOnClickListener {
             val intent = Intent(
