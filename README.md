@@ -31,4 +31,4 @@ git clone https://github.com/Ivanhai/mhapp.git
 * Если билд успешный, то поздравляю 🎉! Вы успешно скомпилировали mhapp!
 * Финальный билд будет в папке `app/build/outputs/apk/debug/app-debug.apk`.
 
-**Вы можете найти уже готовые здесь:** https://github.com/Ivanhai/mhapp/actions
+**Вы можете найти уже готовые здесь:** https://github.com/Ivanhai/mhapp_nominer/actions
